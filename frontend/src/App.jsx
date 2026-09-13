@@ -4,7 +4,7 @@ import FilterBar from "./components/FilterBar";
 import DiscrepancyTable from "./components/DiscrepancyTable";
 import "./index.css";
 
-const API_URL = "http://127.0.0.1:8000/api/discrepancies/";
+const API_URL = `${import.meta.env.VITE_API_URL}/api/discrepancies/`;
 
 function App() {
   const [orgId, setOrgId] = useState("ORG-A");
